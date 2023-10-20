@@ -1,0 +1,23 @@
+body {
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+  }
+  
+  
+img {
+    border-radius: 300px;
+    align-content:center
+    
+}
+div {
+    display: grid;
+    place-items: center;
+  }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    margin-top: 40px;
+  }
