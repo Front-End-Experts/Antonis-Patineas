@@ -1,0 +1,25 @@
+// Define variables for colors and other properties
+$main-color: #007ACC     // Define a variable for the main color
+$font-family: Arial, sans-serif  // Define a variable for the font family
+
+// Apply styling to the body
+body
+  font-family: $font-family   // Set the font family for the entire body
+
+// Apply styling to the main menu
+#main-menu
+  list-style: none           // Remove list bullets or numbering
+  padding: 0                 // Remove padding and margin for the list
+  background-color: $main-color  // Set the background color using the main color variable
+  text-align: center         // Center-align the list items horizontally
+  li
+    display: inline          // Display list items inline
+    margin-right: 20px     // Increase the right margin to add more space between items
+    a
+      text-decoration: none  // Remove underline from anchor links
+      color: white           // Set text color to white
+    // Add hover effect to anchor links
+    &:hover
+      a
+        text-decoration: underline  // Underline the text on hover
+

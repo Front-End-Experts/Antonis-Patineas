@@ -1,0 +1,29 @@
+/* Set the font family for the entire document to Arial or sans-serif as a fallback */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style the main menu container with a blue background, centered text, and no list bullets */
+#main-menu {
+  list-style: none;       /* Remove list bullets */
+  padding: 0;             /* Remove padding */
+  background-color: #007ACC; /* Set background color to a shade of blue */
+  text-align: center;     /* Center-align text within the container */
+}
+
+/* Style the list items inside the main menu */
+#main-menu li {
+  display: inline;        /* Display list items in a horizontal line */
+  margin-right: 20px;     /* Add 20px margin to the right of each list item for spacing */
+}
+
+/* Style the links within the list items */
+#main-menu li a {
+  text-decoration: none;  /* Remove underline from links */
+  color: white;           /* Set text color to white */
+}
+
+/* Style the links within list items when hovered over */
+#main-menu li:hover a {
+  text-decoration: underline; /* Add underline to links when the mouse hovers over them */
+}

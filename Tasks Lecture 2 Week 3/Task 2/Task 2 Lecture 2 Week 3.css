@@ -1,0 +1,58 @@
+#main-menu { /*Βάζουμε background color για όλα μας το μενού (element selector - id selector) */
+    background-color: #5029c5; /* Replace with your desired background color */
+}
+
+
+#main-menu li a { /* Βάζουμε χρώμα για τα navigation items (element selector) */
+    color: #fff; 
+}
+
+#main-menu li a:hover { /* Βάζουμε το χρώμα το οποίο θέλουμε να εμφανίζεται όταν κάνουμε hover με το ποντίκι μας πάνω από τα navigation items (class selector). */
+    background-color: #0c5eeb; 
+}
+
+
+#main-menu { /* Δηλώνουμε τα padding και το margin που θέλουμε να έχουμε, επίσης δηλώνουμε με το list-style:none; ότι θελουμε να αφαιρεθούν τα bullets ή οι αριθμοί που παίρνει default μια λίστα. */
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-menu li { /* Δηλώνουμε το inline block για να βάλουμε τα στοιχεία μας σε μία γραμμή και padding-left για το κενό απο τα αριστερά κάθε στοιχείου για να έχουμε ένα ωραίο αποτεέλεσμα. */
+    text-align:center;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 170px;
+    
+}
+
+
+#main-menu li + li { /* Δίνουμε διαφορετίκα styles για το επόμενο στοιχειό  (combination selector) */
+    margin-left: 30px;
+    background-color: black; 
+}
+
+#main-menu li + li + li { /* Δίνουμε διαφορετίκα styles για το επόμενο διαδοχικό στοιχειό  (combination selector) */
+    margin-left: 30px;
+    background-color: rgb(177, 185, 154); 
+}
+#main-menu li + li + li +li { /* Δίνουμε διαφορετίκα styles για το επόμενο στοιχειό  (combination selector) */
+    margin-left: 30px;
+    background-color: rgb(6, 32, 10); 
+}
+#main-menu li + li + li +li + li { /* Δίνουμε διαφορετίκα styles για το επόμενο στοιχειό  (combination selector) */
+    margin-left: 30px;
+    background-color: rgb(176, 44, 171); 
+}
+
+#main-menu li a { /* Εδώ μπορούμε να δηλώσουμε τι style θέλουμε να έχουν οι descendants "li" του parent class-(ancestor).(descendant selector) */
+    text-decoration: underline;
+    
+}
+
+/* Εδώ δηλώνουμε το style που θέλουμε να έχουν direct children του parent class-(ancestor) (child selector) */
+#main-menu > li {
+    background-color:aqua;
+        height: 20px;    
+}
