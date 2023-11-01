@@ -1,0 +1,76 @@
+$primary-color: #007bff
+$card-bg: #ffffff
+$card-hover-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)
+
+body 
+    background-color: #f8f9fa
+
+
+header 
+    background-color: $primary-color
+    color: #fff
+    text-align: center
+    padding: 1rem 0
+  
+    .header-title 
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100px    
+
+
+.container 
+    margin-top: 20px
+
+
+.product-card 
+    background-color: $card-bg
+    border-radius: 5px
+    padding: 20px
+    text-align: center
+    transition: all 0.3s ease
+
+    img 
+        max-width: 100%
+        border-radius: 5px
+        margin-bottom: 15px
+    
+
+    &:hover 
+        box-shadow: $card-hover-shadow
+    
+
+
+@media (max-width: 767px) 
+    .product-card 
+        margin-bottom: 20px
+    
+
+
+@media (max-width: 575px) 
+    .product-card 
+        margin-bottom: 30px
+    
+
+
+@media (max-width: 991px) 
+    .product-card 
+        margin-bottom: 30px
+
+@media (max-width: 767px) 
+    .product-card 
+        margin-bottom: 20px
+    
+
+
+@media (max-width: 575px) 
+    .product-card 
+        margin-bottom: 30px
+    
+
+
+@media (max-width: 991px) 
+    .product-card 
+        margin-bottom: 30px
+    
+
